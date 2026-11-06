@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smart City Assistant</title>
+        <link rel="stylesheet" 
+            href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        
+        <h1>Smart City Assistant</h1>
+
+        <div>
+                <input
+                    id="city_name"
+                    type="text"
+                    placeholder="Enter a city..."
+                    aria-label="City name"
+                    required
+                    autocomplete="off">        
+            <button id="search" >Search</button>
+        </div>
+
+        <p id = "result"></p>
+
+        <div id="box2">
+            <h4 id="advice_description">AI advice:</h4>
+        </div>
+        <br>
+
+        <p id = "advice"></p>
+
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </body>
+</html>
